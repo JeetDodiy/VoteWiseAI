@@ -1,0 +1,204 @@
+.container {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: var(--color-text-secondary);
+}
+
+.evmContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .evmContainer {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.evm {
+  background: #1e293b;
+  border: 12px solid #0f172a;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.evmTop {
+  background: #0f172a;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #10B981;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.evmLight {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 12px #10B981;
+}
+
+.candidatesList {
+  display: flex;
+  flex-direction: column;
+  background: #cbd5e1;
+}
+
+.candidateRow {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 2px solid #94a3b8;
+  gap: 16px;
+  color: #0f172a;
+}
+
+.serial {
+  font-weight: bold;
+  font-size: 1.25rem;
+  width: 30px;
+}
+
+.details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.party {
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.symbol {
+  font-size: 2rem;
+  width: 60px;
+  text-align: center;
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #0f172a;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.voteBtn {
+  width: 32px;
+  height: 24px;
+  background: #3b82f6;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #1d4ed8;
+  transition: all 0.1s;
+}
+
+.voteBtn:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 #1d4ed8;
+}
+
+.redLight {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ef4444;
+  box-shadow: 0 0 12px #ef4444;
+}
+
+.evmBottom {
+  background: #0f172a;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.castVoteBtn {
+  background: #ef4444;
+  color: white;
+  padding: 12px 32px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 8px;
+  letter-spacing: 1px;
+}
+
+.castVoteBtn:disabled {
+  background: #475569;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.successMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 48px 32px;
+  gap: 16px;
+}
+
+.vppat {
+  background: #f8fafc;
+  color: #0f172a;
+  padding: 24px;
+  border: 1px dashed #94a3b8;
+  width: 100%;
+  max-width: 300px;
+  margin: 24px 0;
+  font-family: monospace;
+}
+
+.vppat span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.infoPanel {
+  padding: 24px;
+  height: fit-content;
+}
+
+.infoPanel h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: var(--color-accent);
+}
+
+.infoPanel ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 20px;
+  color: var(--color-text-secondary);
+}
